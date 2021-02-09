@@ -1,0 +1,132 @@
+
+body {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Ubuntu;
+}
+
+.container {
+  background-color: #FBFFFF;
+  box-shadow: 0 2px 10px #77888C;
+  border-radius: 7px;
+  display: block;
+  padding: 0 45px 20px;
+}
+
+.form-control {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+h2 {
+  margin: 40px 60px 40px;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #4E4E4E;
+}
+
+input {
+  border: 2px solid #E6EAEA;
+  border-radius: 4px;
+  font-family: Montserrat;
+  display: block;
+  width: 98.5%;
+  font-size: 1rem;
+  padding: 7px 0 7px 2px;
+  margin: 5px 0 1px;
+}
+
+input:focus {
+  outline: 0;
+  border-color: #A2A2A2;
+}
+
+input.failure {
+  border-color: red;
+}
+
+input.success {
+  border-color: green;
+}
+
+small {
+  display: none;
+}
+
+small.failure {
+  display: block;
+  color: red;
+}
+
+button {
+  cursor: pointer;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 30px;
+  color: #F6FFFF;
+  font-family: Ubuntu;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #2974A5;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:focus {
+  outline: 0;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 40px 20px;
+  }
+
+  h2 {
+    margin: 40px 30px 40px;
+  }
+}
+
+@media (max-width: 340px) {
+  .container {
+    padding: 0 25px 20px;
+  }
+
+  h2 {
+    margin: 40px 15px 40px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  label, button {
+    font-size: 1.1rem;
+  }
+
+  input {
+    font-size: 0.9rem
+  }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+  .container {
+    margin-top: 300px;
+  }
+}
+
+@media (max-height: 300px) and (orientation: landscape) {
+  .container {
+    margin-top: 400px;
+  }
+}
